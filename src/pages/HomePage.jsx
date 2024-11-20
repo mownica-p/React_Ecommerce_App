@@ -4,11 +4,8 @@ import HomePageProductCard from "../components/homePageProductCard/HomePageProdu
 import Layout from "../components/Layout";
 import Testimonial from "../components/testimonial/Testimonial";
 import Track from "../components/track/Track";
-import { useContext } from "react";
-import myContext from "../context/myContext";
+
 function HomePage() {
-  const context = useContext(myContext);
-  const name = context;
   return (
     <Layout>
       <HeroSection />
@@ -16,7 +13,6 @@ function HomePage() {
       <HomePageProductCard />
       <Track />
       <Testimonial />
-      {name}
     </Layout>
   );
 }

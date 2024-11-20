@@ -1,10 +1,16 @@
-import { Button } from "@material-tailwind/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NoPage from "./pages/NoPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Button>Button</Button>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/*" element={<NoPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

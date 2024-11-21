@@ -46,6 +46,16 @@ const AdminDashboard = () => {
               <h1 className=" text-center text-lg text-pink-500">
                 <span className=" font-bold">Email :</span> {user?.email}
               </h1>
+              {/* Date  */}
+              <h1 className=" text-center text-lg">
+                <span className=" font-bold">Date : </span>
+                {user?.date}
+              </h1>
+              {/* Role  */}
+              <h1 className=" text-center text-lg">
+                <span className=" font-bold">Role : </span>
+                {user?.role}
+              </h1>
             </div>
           </div>
         </div>

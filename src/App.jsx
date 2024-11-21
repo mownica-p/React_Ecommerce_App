@@ -55,9 +55,9 @@ function App() {
               </ProtectedRouteForAdmin>
             }
           />
-
+          {/*dynamic route*/}
           <Route
-            path="/updateproduct"
+            path="/updateproduct/:id"
             element={
               <ProtectedRouteForAdmin>
                 <UpdateProductPage />
